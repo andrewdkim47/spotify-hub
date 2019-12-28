@@ -11,4 +11,5 @@ Users can see their basic spotify analytical information as well as time, date, 
 
 ## Chrome Extension Uploading
 [Youtube Tutorial on New Tab Override](https://www.youtube.com/watch?v=vNb3P5KIxXw)
+
 [Overriding Chrome Page documentation](https://developer.chrome.com/extensions/override)
