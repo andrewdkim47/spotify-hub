@@ -24,10 +24,10 @@ Add if we need legal documents shown to the user. If not go directly to the main
 Everytime a user opens a new tab, they will see this page (after they logged in with spotify).
 
 ### Layout:
-* [Spotify Account name and image](#show-users-top-artists-and-tracks)
-* [Time and Date]
-* Total Listen Hours
-* Show Users Top Artists and Tracks
+* [Spotify Account name and image](#spotify-account-name-and-image)
+* [Time and Date](#time-and-date)
+* [Total Listen Hours](#total-listen-hours)
+* [Show Users Top Artists and Tracks](#show-users-top-artists-and-tracks)
 * 
 
 ### Spotify Account Name and Image
@@ -36,7 +36,8 @@ Everytime a user opens a new tab, they will see this page (after they logged in 
 
 ### Total Listen Hours
 
-### [Show Users Top Artists and Tracks](https://developer.spotify.com/documentation/web-api/reference/personalization/get-users-top-artists-and-tracks/)
+### Show Users Top Artists and Tracks
+[Spotify Api Guide](https://developer.spotify.com/documentation/web-api/reference/personalization/get-users-top-artists-and-tracks/)
 
 
 
