@@ -6,7 +6,7 @@ Users can see their basic spotify analytical information as well as time, date, 
 Bonus: playlist recommender based on user listening data and todo list keywords also being implemented.
 
 ## Setup
-
+HI
 
 ## Login Screen
 When user first downloads the extension, we want the user to see a beautiful new tab layout, but also give the user the option to input their spotify account to get started. ANY issue or "hacky" web path will redirect to this html.
