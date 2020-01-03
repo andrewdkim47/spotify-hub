@@ -6,7 +6,10 @@ Users can see their basic spotify analytical information as well as time, date, 
 Bonus: playlist recommender based on user listening data and todo list keywords also being implemented.
 
 ## Setup
-HI
+Give me your github email and Ill add you as a collaborator. Then youll get an email confirmation and click accept. then you can just copy the https clone link and git clone that in a safe local folder.
+
+### Bash Scripts
+This is just fast command line commands that we want to automate. First chmod +x [bin/test_script] or whatever file, and then try running in cmd line with ./bin/test_script. if you get a weird $/r error, do [sudo apt-get install dos2unix] and then [dos2unix bin/test_script]. ONLY FOR WINDOWS. THen you should be able to run them.
 
 ## Login Screen
 When user first downloads the extension, we want the user to see a beautiful new tab layout, but also give the user the option to input their spotify account to get started. ANY issue or "hacky" web path will redirect to this html.
