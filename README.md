@@ -11,10 +11,10 @@ Bonus: playlist recommender based on user listening data and todo list keywords 
 Give me your github email and Ill add you as a collaborator. Then youll get an email confirmation and click accept. then you can just copy the https clone link and git clone that in a safe local folder. Now you can use terminal to modify and push changes from local to this repository.
 
 #### React App
-Initial Creation: sudo npm install -g create-react-app my-extension
+[Initial Creation](https://medium.com/@gilfink/building-a-chrome-extension-using-react-c5bfe45aaf36): sudo npm install -g create-react-app hub
 
-This creates a folder called my-extension with a basic react app. here we need to add manifest.json in public folder, and any other stuff we want in our build folder.
-We put our json files in src. After we have changes to our react app, we want to build it with [npm run build]. This creates a build folder. This is the folder we want to unload pack for extension.
+This creates a folder called hub with a basic react app. here we need to add manifest.json in public folder, and any other stuff that we want to show up in our build file..
+We put our js files in src. After we have changes to our react app, we want to build it with [npm run build]. This creates a build folder. This is the folder we want to unload pack for extension.
 
 
 #### Python Virtual Environment IGNORE
