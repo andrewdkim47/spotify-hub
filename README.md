@@ -7,6 +7,11 @@ Bonus: playlist recommender based on user listening data and todo list keywords 
 
 ## Setup/Documentations to Look At
 
+#### Spotify App Creation
+Followed these directions [here](https://developer.spotify.com/documentation/web-api/quick-start/) I went to my dashboard and created Hubbify! app.
+Then looked at [this](https://medium.com/@jonnykalambay/now-playing-using-spotifys-awesome-api-with-react-7db8173a7b13) tutorial for understanding connecting to react.
+A really important part of the tutorial is about authorization scopes which can be found [here](https://developer.spotify.com/documentation/general/guides/scopes/).
+
 #### Version Control
 Give me your github email and Ill add you as a collaborator. Then youll get an email confirmation and click accept. then you can just copy the https clone link and git clone that in a safe local folder. Now you can use terminal to modify and push changes from local to this repository.
 
@@ -17,7 +22,7 @@ This creates a folder called hub with a basic react app. here we need to add man
 We put our js files in src. After we have changes to our react app, we want to build it with [npm run build]. This creates a build folder. This is the folder we want to unload pack for extension.
 
 
-#### Python Virtual Environment IGNORE
+#### IGNORE Python Virtual Environment
 We need to setup a python virtual environment to test our web app. virtual environment can be really useful to maintain dependencies.
 To restart this portion: use this command in root folder: rm -rf env
 
@@ -28,7 +33,7 @@ To restart this portion: use this command in root folder: rm -rf env
 
 From now on, activate python env (step 2) before we test or run anything.
 
-#### Install React/JS environment IGNORE
+#### IGNORE Install React/JS environment 
 1.) source env/bin/activate
 2.) pip install nodeenv
 3.) nodeenv --python-virtualenv
