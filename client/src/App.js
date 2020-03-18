@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Spotify from 'spotify-web-api-js';
+import Artists from './artists';
 
 const spotifyWebApi = new Spotify();
 
@@ -12,7 +13,7 @@ class App extends Component {
     const params = this.getHashParams();
     this.state ={
       loggedIn: params.access_token ? true : false,
-      userName: "",
+      userInfo: { username: "Johnny Apples", img: "user_image.jpg"},
       nowPlaying: {
         name: 'Not Checked',
         image: ''
@@ -31,6 +32,10 @@ class App extends Component {
        hashParams[e[1]] = decodeURIComponent(e[2]);
     }
     return hashParams;
+  }
+
+  getUserInfo() {
+
   }
 
   getNowPlaying() {
@@ -64,7 +69,7 @@ class App extends Component {
           <div className="header">
             <div className="header-left">
               <span className="user-image">
-                <img src="user_image.jpg" alt="user_image"/>  &nbsp; &nbsp; Andrew Kim
+                <img src={this.state.userInfo.img} alt="user_image"/>  &nbsp; &nbsp; {this.state.userInfo.username}
               </span>
             </div>
             <div className="header-right">
@@ -81,6 +86,7 @@ class App extends Component {
           {/*<!-------TOP ARTISTS------>*/}
           <div className="artists">
             <h2 className="list-title">Top Artists</h2>
+            <Artists/>
             <div className="list-entry">
                 <span className="accents">&bull;&nbsp;&nbsp;&nbsp;</span>
                 <span>Kendrick Lamar</span>
