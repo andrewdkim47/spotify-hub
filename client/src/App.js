@@ -12,6 +12,7 @@ class App extends Component {
     const params = this.getHashParams();
     this.state ={
       loggedIn: params.access_token ? true : false,
+      userName: "",
       nowPlaying: {
         name: 'Not Checked',
         image: ''
@@ -45,11 +46,69 @@ class App extends Component {
   }
 
   render() {
-    return (
-      <div className="App">
-        <a href="http://localhost:8888">
+    let loggedIn = this.state.loggedIn;
+    let show;
+
+    if (!loggedIn) {
+      show = 
+      <a href="http://localhost:8888">
           <button>Login With Spotify</button>
-        </a>
+      </a>
+    }
+    else {
+      show =
+      <div>
+
+        {/*<!-------HEADER------>*/}
+        <div className="header-body">
+          <div className="header">
+            <div className="header-left">
+              <span className="user-image">
+                <img src="user_image.jpg" alt="user_image"/>  &nbsp; &nbsp; Andrew Kim
+              </span>
+            </div>
+            <div className="header-right">
+              <span>16,356 total hours </span>
+              <span className="accents">&nbsp;&nbsp;|&nbsp; </span> 
+              <span>&nbsp; settings</span>
+            </div>
+          </div>
+        </div>
+        {/*<!-------end of HEADER------>*/}
+
+        {/*<!-------list layout------>*/}
+        <div className="list-body">
+          {/*<!-------TOP ARTISTS------>*/}
+          <div className="artists">
+            <h2 className="list-title">Top Artists</h2>
+            <div className="list-entry">
+                <span className="accents">&bull;&nbsp;&nbsp;&nbsp;</span>
+                <span>Kendrick Lamar</span>
+            </div>
+            <div className="list-entry">
+                <span className="accents">&bull;&nbsp;&nbsp;&nbsp;</span>
+                <span>Epik High</span>
+            </div>
+          </div>
+          {/*<!-------END OF TOP ARTISTS------>*/}
+
+          {/*<!-------TOP TRACKS------>*/}
+          <div className="tracks">
+            <h2 className="list-title">Top Tracks</h2>
+            <div className="list-entry">
+                <span className="accents">&bull;&nbsp;&nbsp;&nbsp;</span>
+                <span>Sunflower - Swae Lee ft. Post Maloneeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</span>
+            </div>
+            <div className="list-entry">
+                <span className="accents">&bull;&nbsp;&nbsp;&nbsp;</span>
+                <span>Snow - Zion.T</span>
+            </div>
+            <div className="list-entry">
+                <span className="accents">&bull;&nbsp;&nbsp;&nbsp;</span>
+                <span>Truth Hurts - Lizzo</span>
+            </div>
+          </div>
+        </div>
         <div> Now Playing: { this.state.nowPlaying.name }</div>
         <div>
           <img src={ this.state.nowPlaying.image } style={{width: 100}}/>
@@ -57,6 +116,14 @@ class App extends Component {
         <button onClick={() => this.getNowPlaying()}>
           Check Now Playing
         </button>
+
+
+      </div>
+    }
+
+    return (
+      <div className="App">
+        {show}
       </div>
     );
   }

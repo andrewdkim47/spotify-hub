@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  background-color: rgb(36, 40, 38);
+}
+
+hr {
+    background-color: black;
+    border: 1px dashed #000;
+    margin-right:4rem;
+    margin-left: 4rem;
+}
+
+.dividers {
+  padding-top:4rem;
+}
+
+
+/**************header****************/
+.header-body {
+    background-color: rgb(29, 33, 31);
+}
+
+.header {
+  overflow: hidden;
+  margin-right: 4rem;
+  margin-left: 4rem;
+  padding-top: 1rem;
+  padding-bottom:1rem;
+  align-content: middle;
+}
+.header span {
+  float: left;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  line-height: 5rem; 
+}
+.header-left {
+  font-size: 2.5rem;
+}
+.header img {
+  width: 6.5rem;
+  vertical-align:middle;
+  border-radius: 50%;
+}
+.header-right {
+  font-size: 210%;
+  float:right;
+
+  font-size: 1.5rem;
+}
+
+span.accents {
+    color: LimeGreen;
+}
+
+
+
+/**************LIST****************/
+.list-body {
+    color: white;
+    width: 100vh;
+    word-wrap: break-word;
+    background-color:red;
+}
+h2 {
+    margin:0;
+}
+/*******Artists************/
+.artists {
+    padding-left:3rem;
+    float: left;
+    word-wrap: break-word;
+    width: 16rem;
+}
+/************Tracks**************/
+.tracks {
+    width: 16rem;
+    float:left;
+    word-wrap: break-word;
+}
+
+.list-entry {
+    padding-top: 1rem;
+}
+span.list-entry-content {
+    margin-left:;
+}
