@@ -17,7 +17,7 @@ class Artists extends React.Component {
       const artistList = this.state.artists.map(artist => (
           <div className="list-entry">
               <span className="accents">&bull;&nbsp;&nbsp;&nbsp;</span>
-              <span>{arist.name}</span>
+              <span>{this.state.artists.name}</span>
           </div>
       ));
     
